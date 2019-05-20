@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "414002908389",
+    "firebase_url": "https://lrenterprises-d8bc3.firebaseio.com",
+    "project_id": "lrenterprises-d8bc3",
+    "storage_bucket": "lrenterprises-d8bc3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:414002908389:android:e0df491844b08bc7",
+        "android_client_info": {
+          "package_name": "risabhmishra.com.lrenterprises"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "414002908389-1kph74u9702ig0n1v5oldl4vlp02v1jp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "risabhmishra.com.lrenterprises",
+            "certificate_hash": "ad5616291774f4f1070bab144586cf51fb7e60c9"
+          }
+        },
+        {
+          "client_id": "414002908389-s9l1tl6pvcbhvi0mpn6k01gk1c1qbgk5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBU2ehdQ7XrVl-dQbFouk_mXP2WGlCkXYI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "414002908389-s9l1tl6pvcbhvi0mpn6k01gk1c1qbgk5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

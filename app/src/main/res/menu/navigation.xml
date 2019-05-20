@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_upcoming"
+        android:icon="@drawable/last"
+        android:title="Upcoming"/>
+
+    <item
+        android:id="@+id/navigation_delivered"
+        android:icon="@drawable/delivered"
+        android:title="Delivered" />
+
+    <item
+        android:id="@+id/navigation_new"
+        android:icon="@drawable/new_order"
+        android:title="New" />
+
+    <item
+        android:id="@+id/navigation_update"
+        android:icon="@drawable/ic_update_black_24dp"
+        android:title="Updates" />
+
+    <item
+        android:id="@+id/navigation_account"
+        android:icon="@drawable/ic_account_balance_black"
+        android:title="My Account" />
+
+</menu>
