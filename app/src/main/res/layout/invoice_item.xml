@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow android:background="@drawable/table_row_bg"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp">
+    <TextView
+        android:id="@+id/invoice_item_number"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:text="1"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/invoice_item_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:text="Name"
+        android:textSize="14sp" />
+
+
+
+    <TextView
+        android:id="@+id/invoice_item_hsn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="hsn"
+        android:gravity="right"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/invoice_item_qty"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="qty"
+        android:gravity="right"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/invoice_item_price"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.5"
+        android:text="rate"
+        android:gravity="center"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/invoice_item_total"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.5"
+        android:gravity="right"
+        android:text="amount"
+        android:textSize="14sp" />
+</TableRow>

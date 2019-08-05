@@ -1,44 +1,47 @@
 package risabhmishra.com.lrenterprises.Model;
 
 public class User {
-    String address,gst,name,phone;
+    String Address,GST,Name,Phone;
 
-    public User(String address, String gst, String name, String phone) {
-        this.address = address;
-        this.gst = gst;
-        this.name = name;
-        this.phone = phone;
+    public User(String address, String GST, String name, String phone) {
+        Address = address;
+        this.GST = GST;
+        Name = name;
+        Phone = phone;
     }
 
     public String getAddress() {
-        return address;
+        return Address;
     }
 
     public void setAddress(String address) {
-        this.address = address;
+        Address = address;
     }
 
-    public String getGst() {
-        return gst;
+    public String getGST() {
+        return GST;
     }
 
-    public void setGst(String gst) {
-        this.gst = gst;
+    public void setGST(String GST) {
+        this.GST = GST;
     }
 
     public String getName() {
-        return name;
+        return Name;
     }
 
     public void setName(String name) {
-        this.name = name;
+        Name = name;
     }
 
     public String getPhone() {
-        return phone;
+        return Phone;
     }
 
     public void setPhone(String phone) {
-        this.phone = phone;
+        Phone = phone;
     }
+
+    public User(){}
+
 }

@@ -1,8 +1,8 @@
 package risabhmishra.com.lrenterprises.Adapter;
 
-
 import android.content.Context;
 import android.content.Intent;
+import android.net.Uri;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -10,10 +10,10 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Filter;
 import android.widget.Filterable;
+import android.widget.ImageButton;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import org.w3c.dom.Text;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -36,7 +36,7 @@ Context context;
     @NonNull
     @Override
     public MyViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
-        View view = LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.user_item,viewGroup,false);
+        View view = LayoutInflater.from(context).inflate(R.layout.user_item,viewGroup,false);
         return new MyViewHolder(view);
     }
 
@@ -45,13 +45,21 @@ Context context;
       final User user = userList.get(i);
       myViewHolder.name.setText(user.getName());
       myViewHolder.address.setText(user.getAddress());
-      myViewHolder.gst.setText(user.getGst());
-      myViewHolder.phone.setText(user.getPhone());
+      myViewHolder.gst.setText(user.getGST());
+      myViewHolder.phone.setOnClickListener(new View.OnClickListener() {
+          @Override
+          public void onClick(View view) {
+              Intent intent = new Intent(Intent.ACTION_DIAL);
+              intent.setData(Uri.parse("tel:"+user.getPhone()));
+              context.startActivity(intent);
+          }
+      });
       myViewHolder.relativeLayout.setOnClickListener(new View.OnClickListener() {
           @Override
           public void onClick(View view) {
-              String user_gst = user.getGst();
-              Preferences.setUserGst(context,user_gst);
+              Preferences.setUserGst(context,user.getGST());
+              Preferences.setUserName(context,user.getName());
+              Preferences.setUserAddress(context,user.getAddress());
               context.startActivity(new Intent(context, BrandSelect.class));
 
           }
@@ -103,7 +111,8 @@ Context context;
 
     public class MyViewHolder extends RecyclerView.ViewHolder
     {
-        TextView name,address,gst,phone;
+        TextView name,address,gst;
+        ImageButton phone;
         RelativeLayout relativeLayout;
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);

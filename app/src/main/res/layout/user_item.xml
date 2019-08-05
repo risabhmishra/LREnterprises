@@ -3,24 +3,48 @@
     android:id="@+id/rlayout"
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="100dp">
+    android:layout_height="100dp"
+    android:padding="10dp">
 
     <TextView
         android:id="@+id/user_name"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto"
+        android:text="name"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="7dp"
+        android:layout_marginBottom="20dp"/>
+
     <TextView
         android:id="@+id/user_address"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:fontFamily="@font/roboto"
+        android:text="address"
+        android:textSize="16sp" />
+
     <TextView
         android:id="@+id/user_gst"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
-    <TextView
+        android:layout_height="wrap_content"
+        android:layout_below="@id/user_name"
+        android:fontFamily="@font/roboto"
+        android:text="gst"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <ImageButton
         android:id="@+id/user_phone"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/call"
+        android:background="#FFFFFF" />
 
 
 

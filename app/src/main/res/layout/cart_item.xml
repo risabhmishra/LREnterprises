@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:padding="10dp"
+    android:id="@+id/rlayout">
+
+    <TextView
+        android:id="@+id/product_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto"
+        android:paddingBottom="30dp"
+        android:text="SPRAY AB- 80-100ml"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/product_type"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/product_name"
+        android:fontFamily="@font/roboto"
+        android:text="80 Spray-100 ml"
+        android:textSize="14sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto"
+        android:text="Amount: "
+        android:layout_marginLeft="10dp"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/product_amount"/>
+    <TextView
+        android:id="@+id/product_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:fontFamily="@font/roboto"
+        android:text="80"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginRight="25dp"/>
+
+    <TextView
+        android:id="@+id/qty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quantity: "
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/product_amount"
+        android:fontFamily="@font/roboto"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/product_qty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1"
+        android:layout_toRightOf="@id/qty"
+        android:fontFamily="@font/roboto"
+        android:layout_centerVertical="true"/>
+
+    <ImageButton
+        android:id="@+id/product_cartremove"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/cross"
+        android:background="#FFFFFF"/>
+
+
+</RelativeLayout>
